@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+}
+
+a {
+  color: cadetblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#notification {
+  color: green;
+  visibility: hidden;
+  transition: visibility 0.5s;
+}
+
+#items {
+  max-height: calc(100vh - 300px); /* adjust 100px based on the height of your other elements */
+  overflow-y: auto;
+}
+
+.show {
+  visibility: visible !important;
+}
+
+.divtitle {
+  margin-top: 50px;
+}
+
+.item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.item input, .item select {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: darkgray;
+  color: white;
+  cursor: pointer;
+}
+
+#clear {
+  background: lightseagreen;
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+
+#showempty {
+  background: cornflowerblue;
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+
+#downloadlist {
+  background: sandybrown;
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+
+#uploadlist {
+  background: lightcoral;
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+
+
+button:hover {
+  background: #444;
+}
+
+#add {
+  background: #4CAF50;
+}
+
+#clear:hover {
+  background: darkolivegreen;
+}
+
+#save {
+  background: deepskyblue;
+}
+
