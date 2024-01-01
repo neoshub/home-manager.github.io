@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Home Manager</h1>
+  </header>
+  <main>
+    <input id="search" oninput="searchItems()" placeholder="Search items..." />
+
+    <button id="showempty" onclick="filterItems()">Show Empty</button>
+    <button id="clear" onclick="clearSearch()">Clear Search</button>
+
+
+    
+    
+    <button id="downloadlist" onclick="downloadItems()">Download List</button>
+
+    
+    <input type="file" id="upload" onchange="uploadItems()" accept=".json" style="display: none;" />
+    <button id="uploadlist" onclick="document.getElementById('upload').click()">Upload List</button>
+    <br /><br />
+
+    <div id="items"></div>
+
+
+    <button id="add" onclick="addItem()">Add Item</button>
+    <button id="save" onclick="saveItems()">Save Items</button>
+    <p id="notification" class="hide">Items Saved!</p>
+  </main>
+  <footer>
+    <p>Home Manager by <a href="https://www.linkedin.com/in/shubham-kucheria/" target="_blank" >Shubham </a>  &copy; 2023</p>
+    
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
